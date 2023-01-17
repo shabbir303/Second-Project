@@ -132,6 +132,7 @@ span{
     justify-content:center;
     align-items:center;
     padding:20px 15px;
+    color:red;
 }
 .productsection{
     width:85%;
@@ -146,4 +147,180 @@ span{
     position:relative;
     background-size:1000px;
     border-radius:10px;
+}
+.productsection>h3{
+    margin:20px;
+    text-shadow:2px 2px 30px rgba(0,0,0,0.2);
+    font-family:myriad pro;
+    font-weight:700;
+    letter-spacing:2px;
+    text-align:center;
+    font-size:2rem;
+    color:#323543;
+}
+.product{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    margin:10px 0px;
+    width:100%;
+}
+.productbox{
+    width:250px;
+    height:330px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    border-radius:8px;
+    position:relative;
+    margin:10px 30px;
+}
+.productbox img{
+    height:200px;
+ }
+ .productbox p{
+     color:#79777a;
+     font-family: myriad pro;
+     font-size:1rem;
+ }
+ .productbox a{
+     color:#2aa71a;
+     font-family:poppins;
+     font-size:1rem;
+ }
+ 
+ .buybtn{
+   position: absolute;
+   display: flex;
+   width: 140px;
+   height: 40px;
+   justify-content: center;
+   align-items: center;
+   font-family: Calibri;
+   left: 50%;
+   bottom:-20%;
+   transform: translateX(-50%);
+   border-radius: 15% 15% 15% 15%/ 50% 50% 50% 50%;
+   background: linear-gradient(120deg, #2b4375, #282033);
+   color: #ffff;
+   display: none;
+   animation: fade 0.2s;
+}
+.productbox:hover .buybtn{
+    display:flex;
+}
+.productbox:hover{
+    box-shadow:2px 2px 30px rgba(0,0,0,0.2);
+    background-color: #ffff;
+}
+.productbox:hover a:last-child{
+    color:#ffff;
+    transition: all-ease 0.3s;
+}
+.about{
+    display:flex;
+    width:85%;
+    margin:50px auto;
+    justify-content:space-around;
+    align-items:center;
+    padding:30px;
+}
+.aboutbox{
+    width: 40%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.aboutbox img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+/*The CSS object-fit property is used to specify how an <img> or <video> should be resized to fit its container.
+This property tells the content to fill the container in a variety of ways; such as "preserve that aspect ratio" or "stretch up and take up as much space as possible".
+Look at the following image from Paris. This image is 400 pixels wide and 300 pixels high:
+We see that the image is being squished to fit the container of 200x300 pixels (its original aspect ratio is destroyed).
+
+Here is where the object-fit property comes in. The object-fit property can take one of the following values:
+
+fill - This is default. The image is resized to fill the given dimension. If necessary, the image will be stretched or squished to fit
+contain - The image keeps its aspect ratio, but is resized to fit within the given dimension
+cover - The image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit
+none - The image is not resized
+scale-down - the image is scaled down to the smallest version of none or contain*/
+.aboutbox h1{
+    color:rgb(128, 51, 51);
+    font-weight:700;
+    font-size: 3rem;
+    margin:0px;
+}
+.aboutbox h4{
+    color:darkblue;
+    font-weight:200;
+    font-size: 2rem;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.aboutbox p{
+    font-size:1rem;
+    color:darkgray;
+    letter-spacing:0.5px;
+}
+.notification{
+    width:100%;
+    height:250px;
+    margin-bottom:30px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-bottom:2px solid rgba(167, 158, 245, 0.1);
+}
+.notification h1{
+    font-size:2rem;
+    color:rgb(56,56,56);
+}
+.notificationsearch{
+    width:500px;
+    background-color:#fff;
+    border-radius:7% 7% 7% 7%/ 50% 50% 50% 50%;
+    height:60px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:5px 20px;
+    box-shadow:2px 5px 30px rgba(0,0,0,0.2);
+    margin-top:30px;
+}
+.notificationsearch input{
+    width:100%;
+    height:40px;
+    border:none;
+    outline:none;
+    background-color:transparent;
+}
+.notificationbutton{
+    width:120px;
+    height:40px;
+    background-color:#202020;
+    border-radius:20px;
+    color:#ffff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-transform:uppercase;
+    text-transform:uppercase;
+    font-weight:bold;
+    box-shadow:2px 2px 30px rgba(0,0,0,0.2);
+    font-size:1rem;
+}
+.notificationbutton:hover{
+    background-color:#6b60ec;
+    transition:all ease 0.5s;
+}
+footer{
+    background-color:black!important;
+    padding:20px;
+    text-align:center;
+    color:white;
 }
